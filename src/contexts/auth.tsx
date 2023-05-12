@@ -65,6 +65,9 @@ export function AuthProvider ({children}){
     }
 
     const checkAuth = async() =>{
+
+        //this function needs update. the logic below is for temporary use since it
+        //is not implemented well. 
         const token = localStorage.getItem('token');
         setLoading(true);
        
