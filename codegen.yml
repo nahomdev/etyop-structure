@@ -1,0 +1,10 @@
+# codegen.yml
+overwrite: true
+schema: "https://insurance.etyop.com/graphql"
+documents: "./src/**/*.graphql"
+generates:
+  src/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
